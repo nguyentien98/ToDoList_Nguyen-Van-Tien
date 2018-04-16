@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #e6e6e6; }
+
+.container {
+  width: 520px;
+  font-family: Tahoma;
+  background-color: #fff;
+  box-shadow: 0 0 40px #000000;
+  padding: 15px;
+  margin: auto; }
+  .container h1 {
+    text-align: center;
+    color: #f60;
+    margin-bottom: 15px;
+    font-size: 50px; }
+  .container .type input {
+    height: 40px;
+    border: 1px solid #f60;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    color: #f60;
+    outline: none; }
+    .container .type input:hover {
+      box-shadow: 0 0 5px #333 inset;
+      outline: none; }
+  .container .item {
+    border: 1px solid #f60;
+    border-top: none;
+    padding: 15px 10px;
+    position: relative; }
+    .container .item:hover {
+      box-shadow: 0 0 5px #333 inset; }
+      .container .item:hover span.remove {
+        display: inline; }
+    .container .item input {
+      width: 20px;
+      height: 20px; }
+    .container .item span.remove {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      color: #f60;
+      display: none; }
+  .container .control {
+    margin-top: 15px;
+    text-align: center; }
+    .container .control button {
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #FFF;
+      border: none;
+      background-color: #f60;
+      border: 2px solid #f60; }
+      .container .control button:hover, .container .control button.active {
+        background-color: #fff;
+        color: #f60;
+        transition: all .2s; }
+
+/*# sourceMappingURL=style.css.map */
