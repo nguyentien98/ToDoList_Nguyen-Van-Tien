@@ -35,6 +35,13 @@ body {
     border-top: none;
     padding: 15px 10px;
     position: relative; }
+    .container .item b {
+      padding-left: 15px;
+      display: inline-block; }
+    .container .item.done {
+      background-color: #f3f3f3; }
+      .container .item.done b {
+        text-decoration: line-through; }
     .container .item:hover {
       box-shadow: 0 0 5px #333 inset; }
       .container .item:hover span.remove {

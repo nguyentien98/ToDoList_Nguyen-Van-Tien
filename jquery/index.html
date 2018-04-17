@@ -11,37 +11,18 @@
 			Todo List
 		</h1>
 		<div class="type">
-			<input type="text" placeholder="What needs to be done?">
+			<form>
+				<input type="text" placeholder="What needs to be done?">
+				<input type="submit" style="display: none">
+			</form>
 		</div>
-		<div class="item">
-			<input type="checkbox">
-			<span>Item 1</span>
-			<span class="remove">X</span>
-		</div>
-		<div class="item">
-			<input type="checkbox">
-			<span>Item 1</span>
-			<span class="remove">X</span>
-		</div>
-		<div class="item">
-			<input type="checkbox">
-			<span>Item 1</span>
-			<span class="remove">X</span>
-		</div>
-		<div class="item">
-			<input type="checkbox">
-			<span>Item 1</span>
-			<span class="remove">X</span>
-		</div>
-		<div class="item">
-			<input type="checkbox">
-			<span>Item 1</span>
-			<span class="remove">X</span>
+		<div class="list-item">
 		</div>
 		<div class="control">
-			<button class="active">All</button>
-			<button>Active</button>
-			<button>Completed</button>
+			<span class="count"></span>
+			<button class="active" id="all">All</button>
+			<button id="active">Active</button>
+			<button id="completed">Completed</button>
 		</div>
 	</div>
 	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
