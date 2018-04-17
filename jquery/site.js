@@ -6,7 +6,7 @@ $(document).ready(function(){
 	update();
 
 	function getNumbers() {
-		return $('.item').length;
+		return $('.item').length - $('.done').length;
 	}
 
 	function update() {
@@ -24,6 +24,7 @@ $(document).ready(function(){
 		} else {
 			$(this).parent().removeClass('done');
 		}
+		update();
 	});
 
 	$('form').submit(function(){

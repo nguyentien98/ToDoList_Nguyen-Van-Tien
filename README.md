@@ -8,7 +8,7 @@
 
 ## Liên kết
 * [ Tham khảo ](http://todomvc.com/examples/jquery/#/all)
-* [ ToDoList_Nguyen-Van-Tien Repository ](https://github.com/tiennguyen98/ToDoList_Nguyen-Van-Tien)
+* [ ToDoList_Nguyen-Van-Tien Repository ](https://tiennguyen98.github.io/ToDoList_Nguyen-Van-Tien)
 
 ## Kiến thức nắm được
 * Biết dùng jQuery và Javascript cơ bản

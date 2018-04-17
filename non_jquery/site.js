@@ -2,7 +2,7 @@
 * Author: Tiến Nguyễn 
 */
 function getNumbers() {
-	return byClass('item').length;
+	return byClass('item').length - byClass('done').length;
 }
 
 function update() {
@@ -46,6 +46,7 @@ function toggleCheck(e) {
 	} else {
 		e.parentElement.classList.remove('done');
 	}
+	update();
 }
 byId('form').addEventListener('submit', function(){
 	if (byId('todo').value !='') {
