@@ -1,6 +1,18 @@
 /*
 * Author: Tiến Nguyễn 
 */
+function getNumbers() {
+	return byClass('item').length;
+}
+
+function update() {
+	oneClass('count').innerHTML = getNumbers()+' item left';
+}
+
+window.onload = function(){
+	update();
+}
+
 function byId(id){
 	return document.getElementById(id);
 }
@@ -13,16 +25,6 @@ function oneClass(className) {
 	return document.getElementsByClassName(className)[0];
 }
 
-function getNumbers() {
-	return byClass('item').length;
-}
-
-function update() {
-	oneClass('count').innerHTML = getNumbers()+' item left';
-}
-window.onload = function(){
-	update();
-}
 function activeControl(e) {
 	for(let i = 0; i < oneClass('control').children.length; i++){
 		if (oneClass('control').children[i].classList.contains('active')) {
