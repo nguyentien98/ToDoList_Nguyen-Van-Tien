@@ -67,6 +67,12 @@ byId('active').addEventListener('click', function(){
 		}
 	}
 });
+byId('clear').addEventListener('click', function(){
+	let elements = byClass('done');
+	while (elements.length > 0){
+		elements[0].remove()
+	};
+});
 byId('all').addEventListener('click', function(){
 	activeControl(this);
 	for(let i = 0; i < oneClass('list-item').children.length; i++){
@@ -83,3 +89,4 @@ byId('completed').addEventListener('click', function(){
 		}
 	}
 });
+

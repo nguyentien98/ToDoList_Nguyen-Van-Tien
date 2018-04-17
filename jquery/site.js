@@ -66,4 +66,11 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$('#clear').click(function(){
+		$('.item').each(function(){
+			if($(this).hasClass('done')){
+				$(this).remove();
+			}
+		});
+	});
 });
